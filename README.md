@@ -40,7 +40,7 @@ app/src/main/java/com/example/gafhubforwarder/
     └── PreferencesManager.java # Хранение API-ключа
 
 
-##🔑 Как работает шифрование
+## 🔑 Как работает шифрование
 
 1. Пользователь вводит пароль при логине
 2. EncryptionManager.generateKey(password, salt) → AES-256 ключ
