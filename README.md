@@ -24,6 +24,8 @@
 Скачайте актуальный APK с [официального сайта](https://echophone.ru/downloads/echophone.apk?utm_source=github&utm_medium=readme&utm_campaign=oss).
 
 ## •• Структура
+
+```
 app/src/main/java/com/example/gafhubforwarder/
 ├── api/
 │   ├── ApiClient.java          # Retrofit-клиент
@@ -38,6 +40,7 @@ app/src/main/java/com/example/gafhubforwarder/
     ├── EncryptionManager.java  # Шифрование AES-256-GCM
     ├── DeviceInfo.java         # Идентификация устройства
     └── PreferencesManager.java # Хранение API-ключа
+```
 
 
 ## •• Как работает шифрование
