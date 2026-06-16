@@ -40,15 +40,11 @@ app/src/main/java/com/example/gafhubforwarder/
     └── PreferencesManager.java # Хранение API-ключа
 
 
-Как работает шифрование
-Пользователь вводит пароль при логине
+##🔑 Как работает шифрование
 
-EncryptionManager.generateKey(password, salt) → AES-256 ключ
-
-При получении уведомления → EncryptionManager.encrypt(plainText, key) → Base64
-
-Зашифрованное сообщение отправляется на сервер
-
-Сервер сохраняет как есть, не расшифровывая
-
-Браузер расшифровывает через Web Crypto API
+1. Пользователь вводит пароль при логине
+2. EncryptionManager.generateKey(password, salt) → AES-256 ключ
+3. При получении уведомления → EncryptionManager.encrypt(plainText, key) → Base64
+4. Зашифрованное сообщение отправляется на сервер
+5. Сервер сохраняет как есть, не расшифровывая
+6. Браузер расшифровывает через Web Crypto API
