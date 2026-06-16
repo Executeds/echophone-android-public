@@ -1,8 +1,8 @@
-# 📱 Эхофон — Android-приложение
+# • Эхофон — Android-приложение
 
 Клиентская часть сервиса [Эхофон](https://echophone.ru) — пересылка SMS и push-уведомлений с Android-телефона в браузер.
 
-## 🔒 Безопасность
+ •• Безопасность
 
 Все уведомления шифруются **на устройстве** алгоритмом **AES-256-GCM** до отправки на сервер. Сервер получает только зашифрованный набор байтов и не может прочитать содержимое.
 
@@ -10,7 +10,7 @@
 
 [Подробнее о безопасности](https://echophone.ru/blog/security-implementation)
 
-## 🛠 Технологии
+## •• Технологии
 
 - **Язык:** Java
 - **HTTP-клиент:** Retrofit 2 + OkHttp
@@ -19,11 +19,11 @@
 - **Перехват уведомлений:** NotificationListenerService
 - **Фоновая работа:** Foreground Service
 
-## 📦 Установка
+## •• Установка
 
 Скачайте актуальный APK с [официального сайта](https://echophone.ru/downloads/echophone.apk?utm_source=github&utm_medium=readme&utm_campaign=oss).
 
-
+## •• Структура
 app/src/main/java/com/example/gafhubforwarder/
 ├── api/
 │   ├── ApiClient.java          # Retrofit-клиент
@@ -40,7 +40,7 @@ app/src/main/java/com/example/gafhubforwarder/
     └── PreferencesManager.java # Хранение API-ключа
 
 
-## 🔑 Как работает шифрование
+## •• Как работает шифрование
 
 1. Пользователь вводит пароль при логине
 2. EncryptionManager.generateKey(password, salt) → AES-256 ключ
